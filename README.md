@@ -12,3 +12,7 @@ Terraform lets you automate the setup, change, and versioning of infrastructure 
 
 install Terraform by official website of hashicor
 <pre><code>https://developer.hashicorp.com/terraform/install</code></pre>
+
+**Initialize terraform**
+<pre><code>terraform init</code></pre>
+
