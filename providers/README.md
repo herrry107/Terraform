@@ -14,4 +14,28 @@ resource aws_s3_bucket my_bucket {
 currently we don't have aws provider installed, we can install it by init command
 <pre><code>terraform init</code></pre>
 
+if we want to create script with specific providers
+<pre><code>
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.97.0"
+    }
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "4.28.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+}
+
+provider "azurerm" {
+  # Configuration options
+}
+</code></pre>
 
