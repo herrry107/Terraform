@@ -1,5 +1,14 @@
 # Basic Commands
 
+**main.tf**
+<pre><code>
+resource local_file my_file {
+	filename= "automate.txt"
+	content= "automate file is created"
+
+}
+</code></pre>
+
 **Initialize Directory**
 <pre><code>terraform init</code></pre>
 
@@ -17,4 +26,5 @@
 **Delete applied changes**
 <pre><code>terraform destroy</code> #ask yes or no</pre>
 <pre><code>terraform destroy -auto-approve #don't ask</code></pre>
+
 
