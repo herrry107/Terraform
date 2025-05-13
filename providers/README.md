@@ -16,7 +16,6 @@ currently we don't have aws provider installed, we can install it by init comman
 
 if we want to create script with specific providers
 <pre><code>
-
 terraform {
   required_providers {
     aws = {
