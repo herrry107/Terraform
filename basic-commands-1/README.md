@@ -1,15 +1,20 @@
 # Basic Commands
 
-Initialize Directory
+**Initialize Directory**
 <pre><code>terraform init</code></pre>
 
-validate file syntax
+**Validate file syntax**
 <pre><code>terraform validate</code></pre>
 
-The terraform plan command is used to create an execution plan in Terraform. It allows you to preview the changes that Terraform will make to your infrastructure before applying them. This helps you understand what will happen without actually making any changes.
+**The terraform plan command is used to create an execution plan in Terraform. It allows you to preview the changes that Terraform will make to your infrastructure before applying them. This helps you understand what will happen without actually making any changes.**
 
 <pre><code>terraform plan</code></pre>
 
-for apply file
-<pre><code>terraform apply</code></pre>
+**For apply file**
+<pre><code>terraform apply #ask for yes or no</code></pre>
+<pre><code>terraform apply -auto-approve #don't ask yes or no</code></pre>
+
+**Delete applied changes**
+<pre><code>terraform destroy</code> #ask yes or no</pre>
+<pre><code>terraform destroy -auto-approve #don't ask</code></pre>
 
