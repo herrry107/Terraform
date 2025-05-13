@@ -18,7 +18,7 @@ currently we don't have aws provider installed, we can install it by init comman
 
 install by official aws url
 
-![https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+[https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 install by command in linux
 <pre><code>
