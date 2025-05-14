@@ -10,7 +10,7 @@ Terraform lets you automate the setup, change, and versioning of infrastructure 
 - On-premise solutions (e.g., VMware)
 - SaaS providers (e.g., Cloudflare, GitHub)
 
-install Terraform by official website of hashicor
+**Install Terraform by official website of hashicorp**
 <pre><code>https://developer.hashicorp.com/terraform/install</code></pre>
 
 **Initialize terraform**
