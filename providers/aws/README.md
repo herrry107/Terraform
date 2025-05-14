@@ -29,7 +29,6 @@ show all s3 bucket in aws
 **aws-s3.tf**
 <pre><code>
 # this is s3 bucket
-
 resource aws_s3_bucket my_bucket {
     bucket = "terraform-practice-23432wersdf"
 }
@@ -37,7 +36,7 @@ resource aws_s3_bucket my_bucket {
 
 **aws-provider-config.tf**
 <pre><code>
-
+#this file is optional otherwise resource create in default region
 provider "aws"{
 	region = "us-east-2"
 }
