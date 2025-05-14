@@ -48,3 +48,6 @@ validate syntax
 apply files
 <pre><code>terraform apply</code></pre>
 
+if we want to delete terraform created resource
+<pre><code>terraform destroy</code></pre>
+
