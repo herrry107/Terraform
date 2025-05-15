@@ -24,3 +24,7 @@ configure aws-cli
 show all s3 bucket in aws
 <pre><code>aws s3 ls</code></pre>
 
+- [1. Create s3 bucket]()
+- [2. Create ec2 instance]()
+- [3. define variables]()
+
