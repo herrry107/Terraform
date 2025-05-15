@@ -16,3 +16,8 @@ Terraform lets you automate the setup, change, and versioning of infrastructure 
 **Initialize terraform**
 <pre><code>terraform init</code></pre>
 
+**Read Terraform Docs**
+
+- [1. Basic Commands](https://github.com/herrry107/Terraform/tree/main/basic-commands)
+- [2. providers](https://github.com/herrry107/Terraform/tree/main/providers)
+

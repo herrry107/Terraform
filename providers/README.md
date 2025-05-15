@@ -26,3 +26,4 @@ provider "azurerm" {
 }
 </code></pre>
 
+[aws infrastructure create](https://github.com/herrry107/Terraform/tree/main/providers/aws)
