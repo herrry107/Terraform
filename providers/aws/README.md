@@ -28,4 +28,5 @@ show all s3 bucket in aws
 - [1. Create s3 bucket](https://github.com/herrry107/Terraform/tree/main/providers/aws/s3)
 - [2. Create ec2 instance](https://github.com/herrry107/Terraform/tree/main/providers/aws/ec2)
 - [3. define variables](https://github.com/herrry107/Terraform/tree/main/providers/aws/variables)
-
+- [4. output data](https://github.com/herrry107/Terraform/tree/main/providers/aws/outputs)
+- [5. shell script](https://github.com/herrry107/Terraform/tree/main/providers/aws/shell-script)

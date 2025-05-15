@@ -11,7 +11,7 @@ sudo apt-get install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-echo "<h1>HELLO TERRAFORM</h1>" > /var/www/html/index.html
+echo "HELLO TERRAFORM" > /var/www/html/index.html
 </code></pre>
 
 now we need to attach this script with ec2 instance so in ec2 block we need to add
