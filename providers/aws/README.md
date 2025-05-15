@@ -24,6 +24,7 @@ configure aws-cli
 show all s3 bucket in aws
 <pre><code>aws s3 ls</code></pre>
 
+**Resources Create in AWS**
 - [1. Create s3 bucket](https://github.com/herrry107/Terraform/tree/main/providers/aws/s3)
 - [2. Create ec2 instance](https://github.com/herrry107/Terraform/tree/main/providers/aws/ec2)
 - [3. define variables](https://github.com/herrry107/Terraform/tree/main/providers/aws/variables)
