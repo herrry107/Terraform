@@ -1,7 +1,7 @@
 #create key pair
 resource aws_key_pair my_key{
   key_name   = "aws-terraform.pub"
-  public_key = file("/root/Terraform/providers/aws/loops/aws-terraform.pub")
+  public_key = file("/root/Terraform/providers/aws/loops/for_each/aws-terraform.pub")
 }
 
 #VPC
@@ -53,13 +53,18 @@ resource aws_security_group my_security_group{
 # ec2-instance
 
 resource aws_instance ec2-instance{
-	count = 2	#total number of instance
+	for_each = tomap({
+	instance1 = "t2.micro"
+	instance2 = "t2.medium"
+})	# meta arguments
+
+
 	key_name = aws_key_pair.my_key.key_name
 	#security_groups = [aws_security_group.my_security_group.name]
 	vpc_security_group_ids = [aws_security_group.my_security_group.id]
 	subnet_id = "subnet-07fc330a10e5cae59"
 	ami = "ami-0e35ddab05955cf57"
-	instance_type = "t2.micro"
+	instance_type = each.value
 	associate_public_ip_address = true
 
 	# machine root volume size defines here
@@ -69,7 +74,7 @@ resource aws_instance ec2-instance{
 		
 	}
 	tags = {
-		Name = "terraform"
+		Name = each.key
 	}
 
 }

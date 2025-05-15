@@ -46,3 +46,8 @@ output "ec2_private_ip" {
         value = aws_instance.ec2-instance[*].private_ip
 }
 </code></pre>
+
+# for_each
+
+[6. for_each](https://github.com/herrry107/Terraform/tree/main/providers/aws/loops/for_each)
+
