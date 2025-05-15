@@ -59,7 +59,7 @@ resource aws_instance ec2-instance{
 	subnet_id = "subnet-07fc330a10e5cae59"
 	ami = var.ec2-ami-id
 	instance_type = var.ec2-instance-type
-
+	associate_public_ip_address = true
 	# machine root volume size defines here
 	root_block_device {
 		volume_size = var.ec2-root-storage-size
