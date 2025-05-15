@@ -30,3 +30,6 @@ show all s3 bucket in aws
 - [3. define variables](https://github.com/herrry107/Terraform/tree/main/providers/aws/variables)
 - [4. output data](https://github.com/herrry107/Terraform/tree/main/providers/aws/outputs)
 - [5. shell script](https://github.com/herrry107/Terraform/tree/main/providers/aws/shell-script)
+- [6. loops](https://github.com/herrry107/Terraform/tree/main/providers/aws/loops)
+
+

@@ -1,7 +1,7 @@
 #create key pair
 resource aws_key_pair my_key{
   key_name   = "aws-terraform.pub"
-  public_key = file("/root/Terraform/providers/aws/ec2/aws-terraform.pub")
+  public_key = file("/root/Terraform/providers/aws/loops/aws-terraform.pub")
 }
 
 #VPC
@@ -53,6 +53,7 @@ resource aws_security_group my_security_group{
 # ec2-instance
 
 resource aws_instance ec2-instance{
+	count = 2	#total number of instance
 	key_name = aws_key_pair.my_key.key_name
 	#security_groups = [aws_security_group.my_security_group.name]
 	vpc_security_group_ids = [aws_security_group.my_security_group.id]
