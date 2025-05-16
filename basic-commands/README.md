@@ -24,7 +24,12 @@ resource local_file my_file {
 <pre><code>terraform apply -auto-approve #don't ask yes or no</code></pre>
 
 **Delete applied changes**
-<pre><code>terraform destroy</code> #ask yes or no</pre>
+<pre><code>terraform destroy    #ask yes or no</code>/pre>
 <pre><code>terraform destroy -auto-approve #don't ask</code></pre>
+
+**Refresh state**
+<pre><code>terraform refresh</code></pre>
+
+now see **terrafrom.tfstate** file
 
 
