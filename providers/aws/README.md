@@ -32,5 +32,6 @@ show all s3 bucket in aws
 - [5. shell script](https://github.com/herrry107/Terraform/tree/main/providers/aws/shell-script)
 - [6. loops](https://github.com/herrry107/Terraform/tree/main/providers/aws/loops)
 - [7. depends_on](https://github.com/herrry107/Terraform/tree/main/providers/aws/depends_on)
+- [8. condition](https://github.com/herrry107/Terraform/tree/main/providers/aws/condition)
 
 
