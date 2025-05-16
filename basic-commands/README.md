@@ -32,4 +32,12 @@ resource local_file my_file {
 
 now see **terrafrom.tfstate** file
 
+**Show state**
+<pre><code>terraform state list</code></pre>
+
+**Remove something from  state**
+<pre><code>terraform state rm aws-key-pair.my_key</code></pre>
+
+**if we want removed state again**
+<pre><code>terraform import aws-key-pair.my_key key-id-in-aws</code></pre>
 
