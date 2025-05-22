@@ -5,8 +5,13 @@ terraform {
       version = "5.98.0"
     }
   }
-}
 
-provider "aws" {
-  # Configuration options
+
+ backend "s3" {
+	bucket = "xcxvsdfdsfcvbcgdfgcc"
+	key = "terraform.tfstate"
+	dynamodb_table = "tws-table"
+	region = "ap-south-1"
+ }
+
 }
