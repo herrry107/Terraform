@@ -44,3 +44,4 @@ module "ec2_instance" {
 }
 </code></pre>
 
+[create own custom modules](https://github.com/herrry107/Terraform/tree/main/modules/create-custom-module)
