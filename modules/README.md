@@ -2,6 +2,7 @@
 
 In Terraform, modules are a fundamental feature that allows you to organize and reuse code efficiently. They enable you to group related resources together and call them multiple times throughout your configuration, making your infrastructure as code (IaC) more maintainable, scalable, and modular.
 
+module script for creating vpc
 <pre><code>
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
@@ -19,6 +20,26 @@ module "vpc" {
   tags = {
     Terraform = "true"
     Environment = "prd"
+  }
+}
+</code></pre>
+
+module script for creating ec2-instance
+<pre><code>
+module "ec2_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+
+  name = "single-instance"
+
+  instance_type          = "t2.micro"
+  key_name               = "ubuntu"
+  monitoring             = true
+  vpc_security_group_ids = ["sg-0be2b7f825f7be2a4"]
+  subnet_id              = "subnet-07fc330a10e5cae59"
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
   }
 }
 </code></pre>
