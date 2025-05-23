@@ -21,3 +21,5 @@ Terraform lets you automate the setup, change, and versioning of infrastructure 
 - [1. Basic Commands](https://github.com/herrry107/Terraform/tree/main/basic-commands)
 - [2. providers](https://github.com/herrry107/Terraform/tree/main/providers)
 - [3. workspace](https://github.com/herrry107/Terraform/tree/main/workspace)
+- [4. modules](https://github.com/herrry107/Terraform/tree/main/modules)
+
